@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>최명빈 회원가입</title></head>
+<body>
+<h3>로그인 정보 제출</h3>
+<hr>
+<form name="fo" method="get">
+<label>ID : </label><input type="text" size="15" value=""><br>
+<label>PW : </label><input type="password" size="15" value="">
+<input type="submit" value="제출">
+<input type="reset" value="리셋">
+</form>
+<hr>
+<h3>추가 정보 제출</h3>
+<form>
+    <!--성별 라디오버튼-->
+    <label>
+        <input type="radio" name="gender" value="female">👩‍🦰
+        <input type="radio" name="gender" value="male">🧔‍♂️
+        <input type="radio" name="gender" value="alien">👽
+        <button type="button" name="gendersubmit" value="성별제출">성별</button><br>
+    </label>
+    <!--감정 드롭다운-->
+    상태 : <input type="text" list="emotion">
+    <datalist id="emotion">
+        <option value="만족☺️"></option>
+        <option value="기쁨😹"></option>
+        <option value="슬픔😰"></option>
+        <option value="화남🤬"></option>
+    </datalist><br>
+    <!--음식 체크박스-->
+    참치<input type="checkbox" value="1" checked>
+    소고기<input type="checkbox" value="2">
+    돼지고기<input type="checkbox" value="3">
+    방어<input type="checkbox" value="3">
+    프로틴쉐이크<input type="checkbox" value="4"><br>
+    <!--영화 콤보박스-->
+    <p>관람 영화 : 
+    <select name="movie">
+        <option value="1">타이타닉</option>
+        <option value="2">빅 피쉬</opiton>
+        <option value="3">트랜스포머</option>
+        <option value="4">헝거 게임</option>
+        <option value="5">아바타</option>
+    </select>
+    </p>
+    <!--하고 싶은 말-->
+    <textarea cols="100" rows="10" name="whattosay" wrap="soft">
+        하고 싶은 말을 남겨주세요.
+    </textarea>
+</form>
+</body>
+</html>
