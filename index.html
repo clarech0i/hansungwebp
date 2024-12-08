@@ -1,66 +1,132 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기소개</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #444;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #555;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>안녕하세요!</h1>
-        <p>저는 열정적인 개발자이자 AI와 데이터 분석에 관심이 많은 대학생입니다. 자기 개발과 성장에 큰 가치를 두며, 항상 새로운 것을 배우고 있습니다.</p>
-        
-        <h2>기본 정보</h2>
-        <ul>
-            <li><strong>이름:</strong> 홍길동</li>
-            <li><strong>출생연도:</strong> 2001년</li>
-            <li><strong>전공:</strong> 경영 컨설팅 & AI 소프트웨어 (복수 전공)</li>
-            <li><strong>거주지:</strong> 서울, 대한민국</li>
-        </ul>
-        
-        <h2>관심 분야</h2>
-        <ul>
-            <li>AI 기반 음성 인식 및 챗봇 개발</li>
-            <li>데이터 분석 및 시각화</li>
-            <li>디지털 마케팅과 고객 행동 분석</li>
-        </ul>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>최명빈의 자기소개 페이지</title>
+        <style>
+            html, body { margin: 0; padding: 0; height: 100%; }
+            header {
+                width: 100%; height: 15%; 
+                background: dodgerblue;
+            }
+            nav { 
+                width: 15%; height: 70%; float: left;
+                background: turquoise;
+            }
+            section {
+                width: 70%; height: 70%; float: left;
+                background: seashell;
+                overflow-y: auto; /* 스크롤 */
+            }
+            aside {
+                width: 15%; height: 70%; float: left;
+                background: mediumslateblue;
+            }
+            footer { 
+                width: 100%; height: 15%; clear: both; 
+                background: plum;
+            }
 
-        <h2>목표</h2>
-        <p>2024년에는 Python을 완전히 마스터하여 음성 인식 챗봇을 개발하고, 향후에는 관리 컨설턴트로서 AI와 빅데이터를 활용한 문제 해결 능력을 발휘하고 싶습니다.</p>
-        
-        <div class="footer">
-            <p>이 페이지는 HTML과 CSS로 제작되었습니다.</p>
-        </div>
-    </div>
-</body>
+            /** 테이블 **/
+            thead, tfoot {
+                background-color: lavender;
+                color: blue;
+            }
+            tbody tr:nth-child(even) {
+                background-color: azure;
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">최명빈의 자기소개 페이지에 오신 것을 환영합니다💕</h1>
+            <h4 style="text-align: center;">웹프로그래밍 과제 제출 용도</h4>
+        </header>
+        <nav>
+            <ol>
+                <li><a href="signin.html" target="_blank">회원가입 - 로그인 폼</a></li>
+                <li><a href="requirements.html" target="_blank">요구사항 - 리스트</a></li>
+            </ol>
+        </nav>
+        <section>
+            <details>
+            <summary>기본 정보</summary>
+                <ul>
+                    <li><img src="clare_mb_choi.jpg" alt="최명빈 취업 사진" width="100" height="100"></li>
+                    <li><b>이름 : </b>최명빈</li>
+                    <li><b>생일 : </b>2001년 08월</li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OlepyUyyqGNarrRGw_eXcfobS9HtAbL99w&s" alt="한성대로고" width="100" height="100"></li>
+                    <li><b>전공 : </b>비즈니스컨설팅학과</li>
+                    <li><b>주소 : </b>서울특별시 은평구 연신내</li>
+                    <li><b>관심 : </b>데이터 분석, 마케팅, 파이썬, 프로젝트, 취업</li>
+                </ul>
+            </details>    
+            <hr>
+            <details>
+            <summary>2024를 돌아보며</summary>
+                <ol type="1">
+                    <li>내가 제일 중요하다</li>
+                    <li>가족들이 2번째로 중요하다</li>
+                    <li>좋은 사람은 생각보다 가까이 존재한다</li>
+                    <li>마음의 문은 완전히 닫지 말자</li>
+                    <li>생각보다 잘 살고 있다</li>
+                    <li>아무 일 없는 것이 좋은 상태이다</li>
+                    <li>체력은 갈수록 떨어지고 있다</li>
+                    <li>고민할 시간에 실행하는 것이 100배 낫다</li>
+                    <li>아닌 것은 아니고 참지 않아도 된다</li>
+                    <li>작은 것에 감사하는 태도는 삶에 있어서 자신을 위해 갖추자</li>
+                </ol>
+            </details>
+            <hr>
+            <details>
+            <summary>웹프로그래밍 숙련도</summary>
+                <p>HTML</p>
+                <progress value="50" max="100"></progress>
+                <p>CSS</p>
+                <progress value="20" max="100"></progress>
+                <p>Java Script</p>
+                <progress value="5" max="100"></progress>
+            </details>
+            <hr>
+            <details>
+            <summary>시간표</summary>
+            <table border="3">
+                <caption><b>[최명빈의 토요일 일정]</b></caption>
+                <thead>
+                    <tr><th>순번</th><th>과목</th><th>시간</th></tr>
+                </thead>
+                <tfoot>
+                    <tr><th>끝</th><th>집</th><th>가자</th></tr>
+                </tfoot>
+                <tbody>
+                    <tr><td>미래인재학부</td><td>데이터사이언스기초</td><td>1시간</td></tr>
+                    <tr><td>비즈니스컨설팅학과</td><td>컨설팅방법론</td><td>2시간</td></tr>
+                    <tr><td>🤭</td><td>동기들과 함께 점심식사</td><td>1시간</td></tr>
+                    <tr><td>비즈니스컨설팅학과</td><td>리스크관리론</td><td>2시간</td></tr>
+                    <tr><td>미래인재학부</td><td>웹프로그래밍</td><td>1시간</td></tr>
+                    <tr><td>비즈니스컨설팅학과</td><td>AI와 SW 기초</td><td>1시간</td></tr>
+                    <tr><td>🤭</td><td>동기들과 함께 저녁식사</td><td>1시간</td></tr>
+                </tbody>
+            </table>
+            </details>
+            <hr>
+            <details>
+            <summary>관심사</summary>
+                <ul>
+                    <li><p onmouseover="cat.png">반려묘 고양이</p></li>
+                    <li>우정</li>
+                    <li>파이썬</li>
+                    <li>철학</li>
+                    <li><a href="https://youtu.be/J72ORmh0Wxw?si=hcZ-xRUgu0W2xZEs">침착맨</a></li>
+                </ul>
+            </details>
+        </section>
+        <aside>
+            <!--작성할 내용 떠올리지 못함...-->
+        </aside>
+        <footer>
+            <p>읽어주셔서 감사합니다!</p>
+        </footer>
+    </body>
 </html>
